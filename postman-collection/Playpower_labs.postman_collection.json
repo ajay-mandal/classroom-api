@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "e191cb6b-315b-48b2-aaf8-e34409ed7521",
+		"name": "Playpower_labs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20912028"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"ajay01\",\n    \"password\":\"123456789\",\n    \"email\":\"ajay0@jay.io\",\n    \"role\": \"STUDENT\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"priya@jay.io\",\n    \"password\":\"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/assignments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhamF5QGpheS5pbyIsImlhdCI6MTcwNDk5NzE4Nn0.b9KYWv-27E4dqq26SpfnRrbGAHcwaeIQ78zcuGObfcs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Second Assignemt\",\n    \"description\":\"Second Assignemt on Check\",\n    \"dueDate\":\"2024-01-20\",\n    \"creatorId\":\"3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/assignments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assignments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/assignments",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJwcml5YUBqYXkuaW8iLCJpYXQiOjE3MDQ5OTgyNDJ9.TA2ykVoHuO-MDdCxaNVkLSIHtgzHSOEfRTcIzrUGZ7Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/assignments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assignments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/assignments/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhamF5QGpheS5pbyIsImlhdCI6MTcwNDk5NzE4Nn0.b9KYWv-27E4dqq26SpfnRrbGAHcwaeIQ78zcuGObfcs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Second Assignemt\",\n    \"description\":\"Second Assignemt on Check\",\n    \"dueDate\":\"2024-01-20\",\n    \"creatorId\":\"3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/assignments/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assignments",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/assignments/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhamF5QGpheS5pbyIsImlhdCI6MTcwNDk5NzE4Nn0.b9KYWv-27E4dqq26SpfnRrbGAHcwaeIQ78zcuGObfcs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/assignment/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assignment",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
