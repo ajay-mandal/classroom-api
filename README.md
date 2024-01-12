@@ -1,7 +1,5 @@
 ## Classroom - Backend API
-Name : Ajay Kumar Mandal</br>
-Email: ajayrox48@gmail.com </br>
-Collage Email : 20btrco048@jainuniversity.ac.in </br>
+This is a classroom Rapid API built using express and prisma. It needs some parameter validations. Will update soon....
 
 ### Technology Used
 Scripting Language : Javascript </br>
